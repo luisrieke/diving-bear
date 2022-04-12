@@ -1,3 +1,35 @@
+<h1 align="center">Basic astro website</h1>
+
+Why better? _alala_.
+
+Text
+
+More text.
+
+More text _why special._
+
+## Links and external ressources
+
+[Astro documentation](https://github.com/withastro/astro)
+
+[View website live](spacifik.dev)
+
+## Installing & Running
+
+### Prerequisites:
+
+- Node v16 or later (check version using `node -v`)
+
+### Installation:
+
+- Install initial dependencies using `npm i`
+
+### Running:
+
+- Build Astro using `npm run build`
+
+---
+
 # Astro Starter Kit: Minimal
 
 ```
@@ -32,7 +64,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 All commands are run from the root of the project, from a terminal:
 
 | Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
+| :---------------- | :------------------------------------------- |
 | `npm install`     | Installs dependencies                        |
 | `npm run dev`     | Starts local dev server at `localhost:3000`  |
 | `npm run build`   | Build your production site to `./dist/`      |
