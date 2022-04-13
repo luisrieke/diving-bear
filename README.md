@@ -1,18 +1,14 @@
-<h1 align="center">Basic astro website</h1>
+<h1 align="center">Diving bear website built with Astro</h1>
 
-Why better? _alala_.
+I created this website for my music. I produce whatever I want to with Ableton, Rekordbox and my guitar. You can find the music on every platform when searching for _diving bear_.
 
-Text
-
-More text.
-
-More text _why special._
+But why did I use Astro? Astro is a framework for building websites. It's a way to build websites that is easy to use and easy to understand.
 
 ## Links and external ressources
 
 [Astro documentation](https://github.com/withastro/astro)
 
-[View website live](spacifik.dev)
+[View diving bear website live](https://divingbearmusic.com)
 
 ## Installing & Running
 
@@ -20,27 +16,16 @@ More text _why special._
 
 - Node v16 or later (check version using `node -v`)
 
-### Installation:
+### Commands:
 
-- Install initial dependencies using `npm i`
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
 
-### Running:
-
-- Build Astro using `npm run build`
-
----
-
-# Astro Starter Kit: Minimal
-
-```
-npm init astro -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -55,21 +40,6 @@ Inside of your Astro project, you'll see the following folders and files:
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but that's where Astro/React/Vue/Svelte/Preact components are meant to be.
 
 Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).

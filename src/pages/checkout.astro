@@ -1,0 +1,93 @@
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>diving bear</title>
+	</head>
+
+	<body>
+		<div class="py-8 bg-slate-900 min-h-screen">
+
+			<nav class="flex justify-center space-x-10 pb-10">
+				<a href="/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">home</a>
+				<a href="/music" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">music</a>
+				<a href="/store" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">store</a>
+			</nav>
+
+      		<h1 class="text-center text-8xl mb-10 font-extrabold tracking-tight text-white">diving bear</h1>
+			<p class="text-center text-sky-800 text-sm sm:text-lg">Buy set now for 23,99€</p>
+
+			<div class="mt-20 mx-auto text-center max-w-3xl px-10">
+				
+				<div class="mt-12 grid gap-8 grid-cols-1">
+					<div class="bg-slate-800 rounded-lg px-6 pb-8">
+						<h3 class="mt-8 mb-8 text-lg font-medium text-slate-400 tracking-tight">This is the checkout, the music is almost yours!</h3>
+
+						<!-- Paypal button -->
+
+						<div id="smart-button-container">
+							<div style="text-align: center;">
+								<div id="paypal-button-container"></div>
+							</div>
+						</div>
+						<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+						<script>
+							function initPayPalButton() {
+							paypal.Buttons({
+								style: {
+								shape: 'rect',
+								color: 'gold',
+								layout: 'vertical',
+								label: 'paypal',
+								
+								},
+
+								createOrder: function(data, actions) {
+								return actions.order.create({
+									purchase_units: [{"description":"Diving Bear Hoodie","amount":{"currency_code":"EUR","value":29.03,"breakdown":{"item_total":{"currency_code":"EUR","value":23.99},"shipping":{"currency_code":"EUR","value":4.99},"tax_total":{"currency_code":"EUR","value":0.05}}}}]
+								});
+								},
+
+								onApprove: function(data, actions) {
+								return actions.order.capture().then(function(orderData) {
+									
+									// Full available details
+									console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+									// Show a success message within this page, e.g.
+									const element = document.getElementById('paypal-button-container');
+									element.innerHTML = '';
+									element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+									// Or go to another URL:  actions.redirect('thank_you.html');
+									
+								});
+								},
+
+								onError: function(err) {
+								console.log(err);
+								}
+							}).render('#paypal-button-container');
+							}
+							initPayPalButton();
+						</script>
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="mt-20 pt-12 border-t-2 border-gray-300">
+				<nav class="flex justify-center pb-10 space-x-10">
+					<a href="https://open.spotify.com/artist/2SdMKRKSJiHi0OKGZr2P0d" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">spotify</a>
+					<a href="https://soundcloud.com/divingbear" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">soundcloud</a>
+					<a href="https://www.instagram.com/divingbearmusic/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">instagram</a>
+				</nav>
+				<p class="text-sm sm:text-base text-center text-slate-800">
+					&copy; diving bear. All rights reserved.
+				</p>
+			</footer>
+    	</div>
+	</body>
+</html>
