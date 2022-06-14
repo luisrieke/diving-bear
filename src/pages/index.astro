@@ -9,35 +9,52 @@
 	<body>
 		<div class="py-8 bg-slate-900 min-h-screen">
 
-			<nav class="flex justify-center space-x-10 pb-10">
-				<a href="/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">home</a>
-				<a href="/music" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">music</a>
-				<a href="/store" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">store</a>
-			</nav>
-
-      		<h1 class="text-center text-8xl mb-10 font-extrabold tracking-tight text-white">diving bear</h1>
-			<p class="text-center text-sky-800 text-sm sm:text-lg">Join newsletter to get updated first</p>
-      		<button onclick="window.location.href='mailto:hello@divingbearmusic.com?subject=Newsletter%20Anmeldung&body=Bitte%20f%C3%BCr%20den%20Newsletter%20eintragen!'" class="block text-slate-400 hover:text-white bg-slate-800 hover:bg-teal-800 px-5 py-3 mx-auto mt-10 font-bold rounded-lg">Sign up now</button>
+      		<h1 class="text-center text-8xl mb-10 mt-48 font-extrabold tracking-tight text-white">diving bear</h1>
+			<p class="text-center text-sky-800 text-sm sm:text-lg">listen to the latest music</p>
 
 			<div class="mt-20 mx-auto text-center max-w-3xl px-10">
-				<p class="mt-2 text-2xl font-extrabold text-sky-900 tracking-tight">
-					What kind of updates can you expect?
+
+				<!-- Streaming Buttons -->
+
+				<div class="mt-12 sm:grid gap-8 grid-cols-3">
+					<button onclick="window.location.href='https://open.spotify.com/artist/2SdMKRKSJiHi0OKGZr2P0d'" class="block text-slate-400 hover:text-white bg-slate-800 hover:bg-green-500 px-8 py-4 mx-auto mt-8 mb-12 font-bold rounded-lg">Spotify</button>
+
+					<button onclick="window.location.href='https://soundcloud.com/divingbear'" class="block text-slate-400 hover:text-white bg-slate-800 hover:bg-orange-600 px-8 py-4 mx-auto mt-8 mb-12 font-bold rounded-lg">Soundcloud</button>
+
+					<button onclick="window.location.href='https://music.apple.com/at/artist/diving-bear/1546426196'" class="block text-slate-400 hover:text-white bg-slate-800 hover:bg-red-500 px-8 py-4 mx-auto mt-8 mb-12 font-bold rounded-lg">Apple Music</button>
+				</div>
+
+				<!-- Kiwi -->
+
+				<p class="mt-12 text-2xl font-extrabold text-sky-900 tracking-tight">
+					Kiwi
 				</p>
-				<p class="mt-5 max-w-prose mx-auto text-xl text-slate-600">
-					No spam. No ads. No bullshit.
+				<p class="mt-2 mb-2 max-w-prose mx-auto text-xl text-slate-600">
+					Album · 2021
 				</p>
 
-				<p class="mt-5 sm:mx-44 max-w-prose text-sm text-slate-600">Every time I release a new album, I'll send you an email with a link to the album.</p>
-				
+				<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1371858694&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/divingbear" title="diving bear" target="_blank" style="color: #cccccc; text-decoration: none;">diving bear</a> · <a href="https://soundcloud.com/divingbear/sets/kiwi" title="Kiwi" target="_blank" style="color: #cccccc; text-decoration: none;">Kiwi</a></div>
+
+				<!-- Jesaya -->
+
+				<p class="mt-12 text-2xl font-extrabold text-sky-900 tracking-tight">
+					Jesaya
+				</p>
+				<p class="mt-2 mb-2 max-w-prose mx-auto text-xl text-slate-600">
+					Album · 2020
+				</p>
+
+				<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1183882207&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/divingbear" title="diving bear" target="_blank" style="color: #cccccc; text-decoration: none;">diving bear</a> · <a href="https://soundcloud.com/divingbear/sets/jesaya" title="Jesaya" target="_blank" style="color: #cccccc; text-decoration: none;">Jesaya</a></div>
+
 			</div>
 
-			<footer class="mt-20 pt-12 border-t-2 border-gray-300">
+			<footer class="mt-20 pt-12">
 				<nav class="flex justify-center pb-10 space-x-10">
-					<a href="https://open.spotify.com/artist/2SdMKRKSJiHi0OKGZr2P0d" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">spotify</a>
-					<a href="https://soundcloud.com/divingbear" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">soundcloud</a>
+					<a href="https://spacifik.de/impressum/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">imprint</a>
+					<a href="https://spacifik.de/datenschutzerklaerung/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">data privacy</a>
 					<a href="https://www.instagram.com/divingbearmusic/" class="text-sm sm:text-lg text-gray-500 hover:text-gray-400">instagram</a>
 				</nav>
-				<p class="text-sm sm:text-base text-center text-slate-800">
+				<p class="text-sm sm:text-base text-center text-slate-600">
 					&copy; diving bear. All rights reserved.
 				</p>
 			</footer>
