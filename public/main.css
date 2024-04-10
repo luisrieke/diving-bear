@@ -10,6 +10,6 @@ body {
 }
 
 .image-class {
-  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(60%);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
